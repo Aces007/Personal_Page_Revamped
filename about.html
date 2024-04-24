@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+
+    <style>
+        :root {
+            --font-fam-btn: "Noto Sans", sans-serif;
+
+            /* Color variables starts here */
+            --clr-main-bg: #1c1c1c;
+            --clr-btn-bg: whitesmoke;
+
+            --clr-light-line: #fff;
+
+            --clr-light-text-01: #fff;
+            --clr-dark-text-01: #000;
+
+            /* Color variables ends here */
+
+            /*Font Configs*/
+            --info-font: 'Georgia', serif;
+            --name-font: 'Times New Roman', sans-serif;
+            --main_info-font: 'Gill Sans', sans-serif;
+            --labels: 'Lucida Sans', sans-serif;
+            --lev_labels: 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background-color: var(--clr-main-bg);
+            color: var(--clr-light-text-01);
+            position: relative;
+            top: 100px;
+            margin-bottom: 200px;
+        }
+
+        a {
+            color: var(--clr-light-text-01);
+            text-decoration: none;
+        }
+
+        .nav-header {
+            width: 100%;
+            background-color: var(--clr-main-bg);
+            overflow: hidden;
+            padding: 2rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 5px;
+            z-index: 9001;
+        }
+
+        .main-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .comp-logo {
+            font-size: 30px;
+            font-family: var(--ff-logo);
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        .header-right-1{
+            gap: 0.5rem;
+        }
+
+        .header-right-1 a{
+            position: relative;
+            padding: 0 1rem;
+            font-size: 1rem;
+            font-family: var(--FF-tertiary);
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .about_cont .about_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        .about_cont .about_content #desc_parag {
+            text-align: center;
+            max-width: 70%;
+        }
+
+        .about_cont .about_content h1 {
+            font-family: var(--labels);
+        }
+
+        .about_cont .about_content p {
+            font-family: var(--info-font);
+            font-size: 20px;
+        }
+
+        .about_cont .about_content #pau {
+            max-width: 20%;
+            border-radius: 4px;
+        }
+        .about_cont .about_content #my_pau {
+            font-size: 25px;
+        }
+        .about_cont .about_content #label{
+            font-size: 18px;
+        }
+
+        .info_header {
+            font-size: 3rem;
+            font-family: var(--header-font);
+            text-transform: uppercase;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .footer_cont {
+            background-color: var(--clr-main-bg);
+            position: relative;
+            top: 90px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer_cont img {
+            width: 50px;
+            height: 50px;
+        }
+        .footer_cont h1 {
+            font-size: 1.5rem;
+        }
+        .footer_cont h2 {
+            font-size: 1rem;
+        }
+    </style>
+
+    <!-- Header Starts Here -->
+
+    <header class="nav-header">
+        <div class="main-header">
+            <div class="header-left">
+                <a class="comp-logo" href="index.html">Aces.</a>
+            </div>
+            <div class="header-right-1">
+                <a href="academic.html">ACADEMIC</a>
+                <a href="personal.html">PERSONAL</a>
+                <a href="family.html">FAMILY</a>
+                <a href="about.html">ABOUT ME</a>
+                <a href="resume.html">RESUME</a>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here -->
+</head>
+<body>
+    <header class="info_header">About Me</header>
+    <div class="about_cont">
+        <div class="about_content">
+            <h1>Describe Yourself</h1>
+            <p id="desc_parag">"I believe that my purpose is not defined by the results of my work
+                but the effort and determination that got me to where I am in the first place.
+                I believe in the power of paying attention more than craving attention
+                because the more I pay attention to someone or something that I love, the happier I am.
+                I moved on from my mentality of seeing my peers as competition rather I see them now as collaborators.
+                I am aware of the things that I can control and the things I can't control.
+                Since I had the breakthroughs with myself after turning 18, I have made it a mission to be positive, be intentional with my dreams,
+                become determined, have faith, be disciplined, remove negativity, and leave a legacy for me and my family.
+                Lastly, I believe in the fact that doubts are part of a person's life
+                and it's up to us to if we are to let these illusions in our mind hold us back or guide us to the path that are looking for. <br><br>
+                One quote that stood out to me watching talks on YouTube was this quote by Mario Lanzarotti,
+                "On the other side of self doubt is the person you have been looking for your whole life."
+                That single statement changed how I think forever. "</p>
+            <h1>Talent</h1>
+            <p>Writing Articles, & Deadlifting</p>
+            <h1>Weaknesses</h1>
+            <p>Backend Developing, Mathematics</p>
+            <h1>Strength</h1>
+            <p>Fitness, English Profiency, Literary, & Science</p>
+            <h1>Hobbies</h1>
+            <p>Playing Video Games, Eating, & Working Out</p>
+            <h1>Sports</h1>
+            <p>Basketball, & Volleyball</p>
+            <h1>Girlfriend</h1>
+            <img src="Assets/pau.jpg" id="pau">
+            <p id="my_pau">Pauline Santos Planas</p>
+            <p id="label">Future Architect</p>
+        </div>
+    </div>
+
+    <footer class="footer_cont">
+        <div class="footer_content">
+            <img src="Assets/tele.png">
+            <h1>Batch 11 Year 2024</h1>
+            <h2>TELECALL INSTITUE OF TECHNOLOGY INC</h2>
+        </div>
+    </footer>
+</body>
+</html>

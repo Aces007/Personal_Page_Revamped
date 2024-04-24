@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Information</title>
+
+    <style>
+        :root {
+            --font-fam-btn: "Noto Sans", sans-serif;
+
+            /* Color variables starts here */
+            --clr-main-bg: #1c1c1c;
+            --clr-btn-bg: whitesmoke;
+
+            --clr-light-line: #fff;
+
+            --clr-light-text-01: #fff;
+            --clr-dark-text-01: #000;
+
+            /* Color variables ends here */
+
+            /*Font Configs*/
+            --info-font: 'Georgia', serif;
+            --name-font: 'Times New Roman', sans-serif;
+            --main_info-font: 'Gill Sans', sans-serif;
+            --labels: 'Lucida Sans', sans-serif;
+            --lev_labels: 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background-color: var(--clr-main-bg);
+            color: var(--clr-light-text-01);
+            position: relative;
+            top: 100px;
+            margin-bottom: 200px;
+        }
+
+        a {
+            color: var(--clr-light-text-01);
+            text-decoration: none;
+        }
+
+        .nav-header {
+            width: 100%;
+            background-color: var(--clr-main-bg);
+            overflow: hidden;
+            padding: 2rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 5px;
+            z-index: 9001;
+        }
+
+        .main-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .comp-logo {
+            font-size: 30px;
+            font-family: var(--ff-logo);
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        .header-right-1{
+            gap: 0.5rem;
+        }
+
+        .header-right-1 a{
+            position: relative;
+            padding: 0 1rem;
+            font-size: 1rem;
+            font-family: var(--FF-tertiary);
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .fam_cont .fam_content {
+            padding-left: 10em;
+            max-width: 100%;
+            display: flex;       
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .fam_cont .fam_content .labels{
+            font-family: var(--labels);
+            font-size: 1.5rem;
+        }
+
+        .fam_cont .fam_content .fam_info{
+            font-family: var(--info-font);
+            font-size: 1.3em;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+
+        .fam_cont .fam_content img {
+            max-width: 40%;
+            position: relative;
+            top: 5px;
+            border-radius: 4px;
+        }
+
+        .info_header {
+            font-size: 3rem;
+            font-family: var(--header-font);
+            text-transform: uppercase;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .footer_cont {
+            background-color: var(--clr-main-bg);
+            position: relative;
+            top: 90px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer_cont img {
+            width: 50px;
+            height: 50px;
+        }
+        .footer_cont h1 {
+            font-size: 1.5rem;
+        }
+        .footer_cont h2 {
+            font-size: 1rem;
+        }
+    </style>
+
+    <!-- Header Starts Here -->
+
+    <header class="nav-header">
+        <div class="main-header">
+            <div class="header-left">
+                <a class="comp-logo" href="index.html">Aces.</a>
+            </div>
+            <div class="header-right-1">
+                <a href="academic.html">ACADEMIC</a>
+                <a href="personal.html">PERSONAL</a>
+                <a href="family.html">FAMILY</a>
+                <a href="about.html">ABOUT ME</a>
+                <a href="resume.html">RESUME</a>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here -->
+</head>
+<body>
+    <header class="info_header">Family Information</header>
+    <div class="fam_cont">
+        <div class="fam_content">
+            <div class="fam_query">
+                <h1 class="labels">Father Name:</h1>
+                <p class="fam_info">Larry T. Clavano, Room Attendant</p>
+                <h1 class="labels">Mother Name:</h1>
+                <p class="fam_info">Mary Grace Z. Clavano, Housewife</p>
+                <h1 class="labels">Brothers Names:</h1>
+                <p class="fam_info">Tristan Pete Z. Clavano</p>
+                <p class="fam_info">Sean Raei Z. Clavano</p>
+                <h1 class="labels">Girlfriend:</h1>
+                <p class="fam_info">Pauline Planas:))</p>
+            </div>
+            <img src="Assets/fam.jpg">
+
+        </div>
+    </div>
+
+    <footer class="footer_cont">
+        <div class="footer_content">
+            <img src="Assets/tele.png">
+            <h1>Batch 11 Year 2024</h1>
+            <h2>TELECALL INSTITUE OF TECHNOLOGY INC</h2>
+        </div>
+    </footer>
+</body>
+</html>

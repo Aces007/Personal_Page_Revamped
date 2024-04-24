@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Application</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+        
+        :root {
+            --font-fam-btn: "Noto Sans", sans-serif;
+
+            /* Color variables starts here */
+            --clr-main-bg: #1c1c1c;
+            --clr-btn-bg: #cccccc;
+
+            --clr-light-text-01: #fff;
+            --clr-dark-text-01: #000;
+
+            /* Color variables ends here */
+        }
+
+            /*region Header */
+
+        body {
+            color: var(--clr-light-text-01);
+            margin: 0;
+            padding-bottom: 80px;
+        }
+
+        a {
+            color: var(--clr-light-text-01);
+            text-decoration: none;
+        }
+
+        .nav_header{
+            width: 100%;
+            background-color: var(--clr-main-bg);
+            overflow: hidden;
+            padding: 2rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 5px;
+            z-index: 9001;
+        }
+
+        .main-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        
+        .comp-logo {
+            font-size: 30px;
+            font-family: var(--ff-logo);
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 800;
+        }
+
+        .header-right-1{
+            gap: 0.5rem;
+        }
+
+        .header-right-1 a{
+            position: relative;
+            padding: 0 1rem;
+            font-size: 1rem;
+            font-family: var(--FF-tertiary);
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .home {
+            background-color: var(--clr-main-bg);
+            width: 100vw;
+            height: 50vw;
+            position: relative;
+            top: 90px;
+            left: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .home #main_img {
+            max-width: 600px;
+            max-height: 600px;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+            -moz-transition: opacity 1s ease-in-out;
+            -webkit-transition: opacity 1s ease-in-out;
+        }
+        
+        .home #main_img:hover {
+            opacity: 0.6;
+            transition: opacity .55s ease-in-out;
+            -moz-transition: opacity .55s ease-in-out;
+            -webkit-transition: opacity .55s ease-in-out;
+        }
+
+        .home .home_cont {
+            position: relative;
+            max-width: 450px;   
+            padding: 5rem;
+            font-size: larger;
+        }
+
+        .home .home_cont h1 {
+            font-size: 2.5rem;
+        }
+        
+        .home .home_cont h3 {
+            font-size: 1.5rem;
+        }
+        
+        .home .home_cont p {
+            font-size: 1.2rem;
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        .home .home_cont .btn_box {
+            margin-top: 30px;
+            position: relative;
+            left: -2px;
+        }
+
+        .home .home_cont .btn_box #btn_1 {
+            font-family: var(--font-fam-btn);
+            font-weight: bolder;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            color: var(--clr-dark-text-01);
+            background-color: var(--clr-btn-bg);
+        }
+
+        .home .home_cont .btn_box #btn_1:hover {
+            background-color: var(--clr-light-text-01);
+        }
+
+        .home .home_cont .btn_box #btn_2 {
+            font-family: var(--font-fam-btn);
+            font-weight: bolder;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            border: 2px solid black;
+            border-radius: 5px;
+            padding: 5px;
+            color: var(--clr-dark-text-01);
+            background-color: var(--clr-btn-bg);
+        }
+
+        .home .home_cont .btn_box #btn_2:hover {
+            background-color: var(--clr-light-text-01);
+        }
+
+        .info_header {
+            font-size: 3rem;
+            font-family: var(--header-font);
+            text-transform: uppercase;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        .footer_cont {
+            background-color: var(--clr-main-bg);
+            position: relative;
+            top: 90px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .footer_cont img {
+            width: 50px;
+            height: 50px;
+        }
+        .footer_cont h1 {
+            font-size: 1.5rem;
+        }
+        .footer_cont h2 {
+            font-size: 1rem;
+        }
+    </style>
+
+    <!-- Header Starts Here -->
+    <header class="nav_header">
+        <div class="main-header">
+            <div class="header-left">
+                <a class="comp-logo" href="index.html" class="active">Aces.</a>
+            </div>
+            <div class="header-right-1">
+                <a href="academic.html" id="head-r_1">ACADEMIC</a>
+                <a href="personal.html " id="head-r_2">PERSONAL</a>
+                <a href="family.html" id="head-r_3">FAMILY</a>
+                <a href="about.html" id="head-r_4">ABOUT ME</a>
+                <a href="resume.html" id="head-r_5">RESUME</a>
+            </div>
+        </div>
+    </header>
+    <!-- Header Ends Here -->
+</head>
+<body>
+    <div class="home">
+        <div class="home_cont">
+            <h1>Hi, I'm Ace Clavano</h1>
+            <h3>Frontend Developer</h3>
+            <p>I am a current Computer Engineering Student from Polytechnic University of the Philippines.
+                What makes me different from other people is that I am willing to work harder than the next
+                person. I don't seek perfection in my work, rather I aim for the quality that will be acceptable to
+                anyone that crosses paths with my work.
+            </p>
+            <div class="btn_box">
+                <a href= "https://www.linkedin.com/in/ace-lawrence-clavano-230450274/" target="_blank" id="btn_1">Hire Me</a>
+                <a href="https://stunning-naiad-4890b8.netlify.app/#skills" target="_blank" id="btn_2">Let's Talk</a>
+            </div>
+        </div>
+        <img src="Assets/1.png" id="main_img">
+    </div>
+
+    <footer class="footer_cont">
+        <div class="footer_content">
+            <img src="Assets/tele.png">
+            <h1>Batch 11 Year 2024</h1>
+            <h2>TELECALL INSTITUE OF TECHNOLOGY INC</h2>
+        </div>
+    </footer>
+</body>
+</html>
